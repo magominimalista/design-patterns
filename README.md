@@ -51,3 +51,13 @@ interface Imposto
 ### 4. State
 **`Na prática:`** Um orçamento tem vários estados, em aprovação, aprovado, finalizado ou reprovado e no estado de em aprovação ou aprovado é possível receber um desconto. 
 **`A solução:`** Vamos criar um código que lance um erro caso já esteja aprovado e queira aprovar novamente, tando aprovado pode finalizar, estando em aprovação pode reprovar e finalizar. Compreender essa lógica dentro do código configura o padrão State. 
+
+---
+
+### 5. Command
+**`Na prática:`** Criar um pedido 
+**`A solução:`** Após aprovação de um pedido vamos executar vários comando. 
+    1. Vai aplicar algum desconto? 
+    2. Gerar o pedido com os dados do cliente
+    3. Salvar no banco de dados
+    4. Enviar um e-mail
