@@ -1,5 +1,7 @@
 # Design Patterns
 
+## Padrões de projetos comportamentais
+
 ### 1. Strategy
 **`Na prática:`** Temos uma calculadora de impostos e a cada novo imposto o nosso código fica maior. Temos um problema.
 
