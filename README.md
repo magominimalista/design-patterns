@@ -57,7 +57,13 @@ interface Imposto
 ### 5. Command
 **`Na prática:`** Criar um pedido 
 **`A solução:`** Após aprovação de um pedido vamos executar vários comando. 
-    1. Vai aplicar algum desconto? 
-    2. Gerar o pedido com os dados do cliente
-    3. Salvar no banco de dados
-    4. Enviar um e-mail
+1. Vai aplicar algum desconto? 
+2. Gerar o pedido com os dados do cliente
+3. Salvar no banco de dados
+4. Enviar um e-mail
+
+---
+
+### 6. Observer
+**`Na prática:`** É preciso lidar com vários eventos, executálos ou não e lidar com cada um separadamente, pois alguns deles podem implementar outras bibliotecas de terceiros para executar o serviço. 
+**`A solução:`** Este mecanismo consiste em um array que vai adiconar itens ou remover itens a serem executados. O php possui uma classe própria para lidar com isso, o **splobserver**, mas o ideal seria criar uma interface personalizada.
