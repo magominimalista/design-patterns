@@ -2,7 +2,7 @@
 
 ## Padrões de projetos comportamentais
 
-### 1. Strategy
+### 01. Strategy
 **`Na prática:`** Temos uma calculadora de impostos e a cada novo imposto o nosso código fica maior. Temos um problema.
 
 **`A solução:`** Cria uma pasta Impostos e dentro delas vamos criar um arquivo para cada imposto onde será implementado o cálculo individual de cada um. 
@@ -39,28 +39,28 @@ interface Imposto
 
 ---
 
-### 2. Chain of Responsbility
+### 02. Chain of Responsbility
 **`Na prática:`** Precisamos aplicar descontos em nosso orçamento, só que esses descontos precisam seguir uma sequência, uma ordem.
 
 **`A solução:`** Para evitar um if dentro do outro criamos a classe de desconto que irá chamar o primeiro desconto em seguida o próximo desconto, por fim, chama um desconto com valor nulo para encerrar o ciclo. Esse padrão existe para chamar sequências. 
 
 ---
 
-### 3. Template Method
+### 03. Template Method
 **`Na prática:`** Dentro dos impostos aplicados, sopomos que hajam impostos com 2 alicotas que fogem do padrão aplicado em Strategy
 
 **`A solução:`** Vamos criar um template que aplicam essas novas regras (classes abstratas) e esses novos impostos extendem essas classes apenas com as regras e os calculos. [ Regra para aplicar a taxa máxima, calculo da taxa máxima e táxa mínima por exemplo.]
 
 ---
 
-### 4. State
+### 04. State
 **`Na prática:`** Um orçamento tem vários estados, em aprovação, aprovado, finalizado ou reprovado e no estado de em aprovação ou aprovado é possível receber um desconto. 
 
 **`A solução:`** Vamos criar um código que lance um erro caso já esteja aprovado e queira aprovar novamente, tando aprovado pode finalizar, estando em aprovação pode reprovar e finalizar. Compreender essa lógica dentro do código configura o padrão State. 
 
 ---
 
-### 5. Command
+### 05. Command
 **`Na prática:`** Criar um pedido 
 
 **`A solução:`** Após aprovação de um pedido vamos executar vários comando. 
@@ -71,14 +71,14 @@ interface Imposto
 
 ---
 
-### 6. Observer
+### 06. Observer
 **`Na prática:`** É preciso lidar com vários eventos, executálos ou não e lidar com cada um separadamente, pois alguns deles podem implementar outras bibliotecas de terceiros para executar o serviço. 
 
 **`A solução:`** Este mecanismo consiste em um array que vai adiconar itens ou remover itens a serem executados. O php possui uma classe própria para lidar com isso, o **splobserver**, mas o ideal seria criar uma interface personalizada.
 
 ---
 
-### 7. Iterator
+### 07. Iterator
 **`Na prática:`** Quando é preciso lidar com muitos objetos ou um passo a passo muito grande, na criação de várias coleções ou execução de város dados.
 
 **`A solução:`** Há uma biblioteca do php que percorre esses dados. É um padrão simples para execução de muitas instruçõess. Podemos conhecer um pouco mais sobre ele em: https://refactoring.guru/design-patterns/iterator
@@ -87,14 +87,14 @@ interface Imposto
 
 ## Padrões de projetos estruturais
 
-### 8. Adapter
+### 08. Adapter
 **`Na prática:`** Precisamos enviar um orçamento para nossa API. E não importa se vamos usar o reactphp, guzzle, curl.
 
 **`A solução:`** Essa chamada extrerna precisa de uma interface e ela precisa ser separada da camada de execução. Pra mesma interface nós temos várias implementações possíveis. O padrão Adapter pode nos ajudar a trocar detalhes de infraestrutura, sem muitas dores de cabeça.
 
 ---
 
-### 9. Bridge
+### 09. Bridge
 **`Na prática:`** Precisamos salvar dados dos nossos pedidos em vários formatos diferentes, xml, zip, csv contudo se fizermos vários arquivos para extrair o conteúdo para cada formato o sistema fica insustentável.
 
 **`A solução:`** Separando os objetos (abstraindo) que queremos criar dos formatos que queremos exportar agente cria uma ponte entre o conteúdo da exportação e os formatos exportados.
