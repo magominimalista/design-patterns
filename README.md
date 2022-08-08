@@ -97,4 +97,13 @@ interface Imposto
 ### 9. Bridge
 **`Na prática:`** Precisamos salvar dados dos nossos pedidos em vários formatos diferentes, xml, zip, csv contudo se fizermos vários arquivos para extrair o conteúdo para cada formato o sistema fica insustentável.
 
-**`A solução:`** Separando os objetos (abstraindo) que queremos criar dos formatos que queremos exportar agente cria uma ponte entre o conteúdo da exportação e os formatos exportados. cd
+**`A solução:`** Separando os objetos (abstraindo) que queremos criar dos formatos que queremos exportar agente cria uma ponte entre o conteúdo da exportação e os formatos exportados.
+
+---
+
+### 10. Decorator
+**`Na prática:`** Precisamos somar vários impostos em tempo de execução.
+
+**`A solução:`** Criando uma classe abstrata para somar ou não um novo imposto agente evita ter que criar classes que somam 2 ou mais impostos, e esse padrão é conhecido como decorator. 
+
+---
