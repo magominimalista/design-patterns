@@ -91,3 +91,10 @@ interface Imposto
 **`Na prática:`** Precisamos enviar um orçamento para nossa API. E não importa se vamos usar o reactphp, guzzle, curl.
 
 **`A solução:`** Essa chamada extrerna precisa de uma interface e ela precisa ser separada da camada de execução. Pra mesma interface nós temos várias implementações possíveis. O padrão Adapter pode nos ajudar a trocar detalhes de infraestrutura, sem muitas dores de cabeça.
+
+---
+
+### 9. Bridge
+**`Na prática:`** Precisamos salvar dados dos nossos pedidos em vários formatos diferentes, xml, zip, csv contudo se fizermos vários arquivos para extrair o conteúdo para cada formato o sistema fica insustentável.
+
+**`A solução:`** Separando os objetos (abstraindo) que queremos criar dos formatos que queremos exportar agente cria uma ponte entre o conteúdo da exportação e os formatos exportados. cd
