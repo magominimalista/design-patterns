@@ -82,3 +82,12 @@ interface Imposto
 **`Na prática:`** Quando é preciso lidar com muitos objetos ou um passo a passo muito grande, na criação de várias coleções ou execução de város dados.
 
 **`A solução:`** Há uma biblioteca do php que percorre esses dados. É um padrão simples para execução de muitas instruçõess. Podemos conhecer um pouco mais sobre ele em: https://refactoring.guru/design-patterns/iterator
+
+---
+
+## Padrões de projetos estruturais
+
+### 8. Adapter
+**`Na prática:`** Precisamos enviar um orçamento para nossa API. E não importa se vamos usar o reactphp, guzzle, curl.
+
+**`A solução:`** Essa chamada extrerna precisa de uma interface e ela precisa ser separada da camada de execução. Pra mesma interface nós temos várias implementações possíveis. O padrão Adapter pode nos ajudar a trocar detalhes de infraestrutura, sem muitas dores de cabeça.
