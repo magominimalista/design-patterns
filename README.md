@@ -114,3 +114,10 @@ interface Imposto
 **`A solução:`** Composite é uma técnica para fazer com que a composição dos itens (árvore de objetos) dentro de uma operação. É como poder somar mais de um carrinho de compraas cada um com seus itens.
 
 ---
+
+### 12. Facade
+**`Na prática:`** Precisamos fazer log dos nossos orçamentos ou enviar os dados para um API.
+
+**`A solução:`** Facade ou faixadas é uma maneira de intermediar com bibliotecas externas para realizar algumas funcionalidades de forma simples.
+
+---
