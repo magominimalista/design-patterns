@@ -144,3 +144,11 @@ interface Imposto
 **`Na prática:`** Precisamos criar logs da nossa aplicação.
 
 **`A solução:`** É preciso uma lógica que organize a forma de criar logs, muito parecido com o temple method, na verdade é uma especialização desse padrão. Ao invés de implementar um algorítimo específico ele implementa apenas a criação de um objeto específico.
+
+---
+
+### 16. Abstract Factory
+**`Na prática:`** Você uma loja de imóveis e tem estilos diferentes: classico, vitoriano, moderno
+
+**`A solução:`** Sempre que eu crio uma cadeira no estilo vitoriano, eu preciso criar um sofá no estilo vitoriano. Ou por exemplo: sempre que eu for fazer a venda de um serviço eu vou aplicar o imposto de ISS e sempre que eu for vender algo físico irei aplicar o imposto de ICMS. Em outras palavras o Abstract Factory cria modelos relacionais. 
+
