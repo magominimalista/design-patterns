@@ -1,5 +1,7 @@
 # Design Patterns
 
+> Só para lembrar que alguns padrões são muito parecidos entre si mas a intenção entre eles é diferente. 
+
 ## Padrões de projetos comportamentais
 
 ### 01. Strategy
@@ -119,5 +121,12 @@ interface Imposto
 **`Na prática:`** Precisamos fazer log dos nossos orçamentos ou enviar os dados para um API.
 
 **`A solução:`** Facade ou faixadas é uma maneira de intermediar com bibliotecas externas para realizar algumas funcionalidades de forma simples.
+
+---
+
+### 13. Proxy
+**`Na prática:`** Nosso valor orçado agora está sendo consultado em uma API e leva 5 segundos para exibir o resultado. Precisamos fazer um cache do nosso valor orçado para evitar que ele consulte a api novamente caso seja chamado. 
+
+**`A solução:`** Um Proxy é tipo um filtro que implementa ações antes do consumo dos dados. Ao criar uma classe de cache, primeiro verifica se o valor já está cacheado, se não, cachea esse valor e criamos excessões para outros métodos já implementado que não são suportados pela nossa classe como por exemplo: adicionar itens.
 
 ---
