@@ -107,3 +107,10 @@ interface Imposto
 **`A solução:`** Criando uma classe abstrata para somar ou não um novo imposto agente evita ter que criar classes que somam 2 ou mais impostos, e esse padrão é conhecido como decorator. 
 
 ---
+
+### 11. Composite
+**`Na prática:`** Precisamos somar não apenas os itens de um orçamento contudo ítens de outros tipos de orçamento.
+
+**`A solução:`** Composite é uma técnica para fazer com que a composição dos itens (árvore de objetos) dentro de uma operação. É como poder somar mais de um carrinho de compraas cada um com seus itens.
+
+---
