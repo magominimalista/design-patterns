@@ -158,3 +158,10 @@ interface Imposto
 **`Na prática:`** O objetivo é criar uma nota fiscal completa para serviços e produtos com classes próprias para aplicar as taxas. 
 
 **`A solução:`** Criar um construtor para realizar uma tarefa complexa é chamado de Builder.
+
+---
+
+### 18. Prototype
+**`Na prática:`** Precisamos implementar uma cópia da nossa nota fiscal com a adição de alguns itens extras.
+
+**`A solução:`** Usando a palavra reservada Clone o processo de clonar fica independente da implementação usada. E ai sim a partir disso eu posso atualizar alguns parâmetros e adicionar os itens extras.
