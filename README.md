@@ -137,3 +137,10 @@ interface Imposto
 **`A solução:`** Ao criar objetos comuns separados da nossa estrutura conseguimos realizar esse feito. Exemplo a data atual é uma só pra todos então gera uma única vez e inclui ela nos pedidos que estão sendo feito. Um cliente pode ter mais de um orçamento então essa seria mais uma segregação a ser feita. [ Raro uso: Usar somente se necessário ]
 
 ---
+
+## Padrões de projetos criacionais
+
+### 15. Factory Method
+**`Na prática:`** Precisamos criar logs da nossa aplicação.
+
+**`A solução:`** É preciso uma lógica que organize a forma de criar logs, muito parecido com o temple method, na verdade é uma especialização desse padrão. Ao invés de implementar um algorítimo específico ele implementa apenas a criação de um objeto específico.
