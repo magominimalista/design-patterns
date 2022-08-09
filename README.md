@@ -152,3 +152,9 @@ interface Imposto
 
 **`A solução:`** Sempre que eu crio uma cadeira no estilo vitoriano, eu preciso criar um sofá no estilo vitoriano. Ou por exemplo: sempre que eu for fazer a venda de um serviço eu vou aplicar o imposto de ISS e sempre que eu for vender algo físico irei aplicar o imposto de ICMS. Em outras palavras o Abstract Factory cria modelos relacionais. 
 
+---
+
+### 17. Builder
+**`Na prática:`** O objetivo é criar uma nota fiscal completa para serviços e produtos com classes próprias para aplicar as taxas. 
+
+**`A solução:`** Criar um construtor para realizar uma tarefa complexa é chamado de Builder.
