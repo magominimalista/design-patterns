@@ -130,3 +130,10 @@ interface Imposto
 **`A solução:`** Um Proxy é tipo um filtro que implementa ações antes do consumo dos dados. Ao criar uma classe de cache, primeiro verifica se o valor já está cacheado, se não, cachea esse valor e criamos excessões para outros métodos já implementado que não são suportados pela nossa classe como por exemplo: adicionar itens.
 
 ---
+
+### 14. Flyweight
+**`Na prática:`** Precisamos reduzir o uso de memória que a nossa aplicação consome. 
+
+**`A solução:`** Ao criar objetos comuns separados da nossa estrutura conseguimos realizar esse feito. Exemplo a data atual é uma só pra todos então gera uma única vez e inclui ela nos pedidos que estão sendo feito. Um cliente pode ter mais de um orçamento então essa seria mais uma segregação a ser feita. [ Raro uso: Usar somente se necessário ]
+
+---

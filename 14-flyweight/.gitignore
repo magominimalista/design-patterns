@@ -1,0 +1,9 @@
+/git
+/idea
+/vendor
+composer.lock
+/.vscode
+.php-files.json
+.idea
+.git
+.DS_Store
